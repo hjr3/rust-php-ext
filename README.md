@@ -34,4 +34,4 @@ $ php -d extension=php-ext/modules/score.so -r "var_dump(score('vim', 'vi'));"
 
 The `-d` option tells PHP that we are passing an ini option to look for the `score.so` shared object at the specified path. The `-r` option tells PHP to run the code within quotes.
 
-[blog post]: https://hermanradtke.com/2015/08/03/creating-a-php-extension-to-rust.html
+[blog post]: http://hermanradtke.com/2015/08/03/creating-a-php-extension-to-rust.html
