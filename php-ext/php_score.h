@@ -14,6 +14,6 @@
 extern zend_module_entry score_module_entry;
 #define phpext_score_ptr &score_module_entry
 
-extern double ext_score(char *, char *);
+extern double ext_score(unsigned char *, unsigned int, unsigned char *, unsigned int);
 
 #endif

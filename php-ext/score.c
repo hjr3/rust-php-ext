@@ -11,20 +11,7 @@ PHP_FUNCTION(score)
         return;
     }
 
-    // PHP does not terminate strings with a nul byte.
-
-    char *choice_c_str = emalloc(choice_len + 1);
-    strncpy(choice_c_str, choice, choice_len);
-    choice_c_str[choice_len] = '\0';
-
-    char *query_c_str = emalloc(query_len + 1);
-    strncpy(query_c_str, query, query_len);
-    query_c_str[query_len] = '\0';
-
-    double s = ext_score(choice_c_str, query_c_str);
-
-    efree(choice_c_str);
-    efree(query_c_str);
+    double s = ext_score(choice, choice_len, query, query_len);
 
     RETURN_DOUBLE(s);
 }

@@ -1,3 +1,5 @@
+CFLAGS="$CFLAGS -Wall"
+
 PHP_ARG_WITH(score,
     [whether to enable the "score" extension],
     [  --enable-score          Enable "score" extension support])
