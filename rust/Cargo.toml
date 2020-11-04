@@ -7,7 +7,7 @@ authors = [ "herman@hermanradtke.com" ]
 
 [lib]
 name = "score"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [dependencies]
 libc = "0.1.7"
